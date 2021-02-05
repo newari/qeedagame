@@ -1,0 +1,42 @@
+.main {
+    font-family: Arial;
+    display: block;
+    margin-top: 40px;
+}
+.user-img {
+    height: 60px !important;
+    width: 60px !important;
+    padding: 1px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: white;
+}
+.wrapper {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    height: 200px !important;
+    margin-right: 10px;
+    background-color: #f7f7f7 !important;
+    padding: 0px !important;
+}
+.name {
+    color: #3498db;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 8px;
+}
+.mobile {
+    color: #3498db;
+    font-size: 14px;
+    text-align: center;
+}
+.amount {
+    color: #3498db;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 4px;
+    font-weight: bold;
+}

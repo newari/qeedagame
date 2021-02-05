@@ -1,0 +1,362 @@
+html{
+    min-height: 100%;
+    position: relative;
+}
+body {
+    background: #ebeff2;
+    height: auto;
+    min-height: 100%;
+    margin:0px
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+li,
+div,
+td,
+th,
+small,
+label,
+button,
+input,
+select {
+    font-family: 'Open Sans', sans-serif;
+}
+.hide{
+    display:none;
+}
+.show{
+    display: block;
+}
+.page-loader.hide {
+    display: none !important;
+}
+
+.page-loader.show {
+    display: block !important;
+}
+
+.page-loader .spinner {
+    position: absolute;
+    display: inline-block;
+    top: calc(50% - 22px);
+    left: calc(50% - 22px);
+}
+
+.page-loader .spinner-icon {
+    width: 44px;
+    height: 44px;
+    box-sizing: border-box;
+    border: solid 4px transparent;
+    border-radius: 50%;
+    -webkit-animation: eknotifier-spinner 400ms linear infinite;
+    animation: eknotifier-spinner 800ms linear infinite;
+}
+
+/*ek-notifier-css*/
+
+.ek-notifier {
+    position: fixed;
+    z-index: 999;
+    background: #3F51B5;
+    height: 2px;
+    width: 0px;
+    /*width: 100%;*/
+    /* transition: opacity 0.1s linear; */
+    /*-webkit-transition-delay: 0.1s;*/
+    /* Safari */
+    /*transition-delay: 0.1s;*/
+    opacity: 1;
+    -webkit-transition: width 0.5s;
+    /* Safari */
+    transition: width 0.5s;
+}
+
+.vhide {
+    visibility: hidden;
+}
+
+
+/* .ek-progressbar {
+    transition: opacity 0.5s linear;
+} */
+
+.ek-alert {
+    position: fixed;
+    z-index: 1011;
+    right: 10px;
+    top: 120px;
+}
+
+.ek-alert .msg-box {
+    background: #e2e2e2;
+    padding: 10px;
+    border-radius: 2px;
+    color: black;
+    font-size: 12px;
+    box-shadow: 2px 2px 2px 2px #ffffff;
+}
+
+.ek-alert .msg-box.success {
+    background: #4CAF50;
+    color: white;
+}
+
+.ek-alert .msg-box.danger {
+    background: #F44336;
+    color: white;
+}
+
+.ek-alert .close-opt {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 2px;
+    color: #d2d2d2;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.spinner {
+    display: block;
+    position: fixed;
+    z-index: 1032;
+    top: 15px;
+    left: 16%;
+}
+
+.ek-nav-spinner .spinner {
+    z-index: 1031;
+    top: 15px;
+    left: 16%;
+}
+
+@keyframes eknotifier-spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner-icon {
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+    border: solid 2px transparent;
+    border-radius: 50%;
+    -webkit-animation: eknotifier-spinner 400ms linear infinite;
+    animation: eknotifier-spinner 400ms linear infinite;
+}
+
+
+/*end-ek-notifier-css*/
+header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    background: white;
+    height: 50px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+    z-index: 101;
+}
+
+header .right-sec {
+    float: right;
+}
+
+header .right-sec ul {
+    margin: 0px;
+}
+
+header .right-sec ul li {
+    padding: 4px 8px;
+    list-style: none;
+    margin-left: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+header .right-sec>ul>li.user-opts>a {
+    cursor: pointer;
+    font-size: 30px;
+}
+
+header .right-sec>ul>li.user-opts .ui-menu {
+    background: white;
+    box-shadow: rgb(214, 214, 214) 1px 1px 1px 0px;
+}
+.header .ssn-cntr-dt{
+    color:#888888;
+    font-size: 12px;
+    line-height: 42px;
+}
+
+.sidebar {
+    padding-bottom: 100px;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.sidebar .org-logo-sec {
+    position: fixed;
+    bottom: 0px;
+    width: 18%;
+    height: 60px;
+    z-index: 1;
+}
+
+.sidebar .org-logo-sec a {
+    width: 100%;
+    display: inline-block;
+    min-height: 60px;
+    max-height: 100px;
+    overflow: hidden;
+    /* vertical-align: text-top; */
+    background: rgb(247, 60, 46);
+    padding: 5px;
+}
+
+.sidebar .org-logo-sec a img {
+    width: 100%;
+}
+
+.sidebar .menu-heading h4 {
+    font-size: 14px;
+    color: darkgrey;
+    padding-left: 15px;
+    border-bottom: solid 1px rgba(230, 230, 230, 0.31);
+    padding-bottom: 6px;
+    margin-top: 20px;
+}
+
+.sidebar-menu {
+    padding: 0px;
+}
+
+.sidebar-menu li {
+    list-style: none;
+}
+
+.sidebar-menu li a {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #36404a;
+    border-left: 3px solid transparent;
+}
+
+.sidebar-menu li a:hover {
+    text-decoration: none;
+    background: #f4f8fb;
+    border-left: 3px solid #5fbeaa;
+    color: #5fbeaa !important;
+}
+
+.sidebar-menu li.active a {
+    text-decoration: none;
+    background: #f4f8fb !important;
+    border-left: 3px solid #5fbeaa;
+    color: #5fbeaa !important;
+}
+
+.sidebar-menu li a .link-icon {
+    font-size: 17px;
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;  
+}
+
+.sidebar-wrapper {
+    float: left;
+    min-width: 18%;
+    background: white;
+    /*min-height: 400px;*/
+}
+
+app-sidebar {
+    position: fixed;
+    width: 18%;
+    height: 100%;
+    background: white;
+    margin-top: 51px;
+    top: 0px;
+    z-index: 2;
+}
+app-footer{
+    position: absolute;
+    bottom: 0px;
+    z-index: 0;
+    background: #d9dada96;
+    width: 100%;
+    border-top: solid 1px #d8d8d8;
+    padding: 2px 15px;
+}
+app-footer footer{
+    padding-left:18.1%;
+}
+app-footer.footer-edukit-store footer{
+    padding-left:0px;
+}
+app-footer footer ul{
+    padding:0px;
+    margin: 0px;
+    display: inline-block;
+}
+
+app-footer footer ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 5px;
+    font-size: 12px;
+}
+app-footer footer ul li.brand{
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+header .ek-logo-sec {
+    display: inline-block;
+    padding: 8px;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #00796B;
+    width: 18%;
+    border-right: solid 1px whitesmoke;
+    min-width:130px;
+}
+
+header .ek-logo-sec i {
+    color: #009688;
+}
+
+header .app-sec {
+    display: inline-block;
+    padding: 8px;
+    font-size: 20px;
+    margin-left: 60px;
+}
+.page-wrapper{
+    padding: 30px 15px;
+}

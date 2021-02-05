@@ -1,0 +1,14 @@
+<Files "*.json">
+  Header set Access-Control-Allow-Origin "*"
+  Header set Access-Control-Allow-Headers "token"
+  <IfModule mod_headers.c>
+	Header set Cache-Control "no-cache, no-store, must-revalidate"
+	Header set Pragma "no-cache"
+	Header set Expires 0
+</IfModule>
+
+</Files>
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]

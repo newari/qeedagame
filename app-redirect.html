@@ -1,0 +1,46 @@
+<!doctype html>
+<html style="height: 100%;">
+
+<head>
+    <meta charset="utf-8">
+    <title>Qeeda App Redirection</title>
+</head>
+
+<body style="height: 100%;margin: 0">
+    <!-- <iframe style="width: 100%;height: 100%;border: none;" id="loader"></iframe>
+
+    <script>(function () {
+            // + window.location.search + window.location.hash
+            var fallbackLink = 'https://play.google.com/store/apps/details?id=com.qeedagame.app';
+            // var isiOS = navigator.userAgent.match('iPad') || navigator.userAgent.match('iPhone') || navigator.userAgent.match('iPod'),
+            var isAndroid = navigator.userAgent.match('Android');
+            if (isAndroid) {
+                // document.getElementById('loader').src = '"intent://nbb/#Intent;scheme=newbrandbuy;package=io.ionic.starter;S.browser_fallback_url=http://qeedagame.com/;end"';
+                // fallbackLink = isAndroid ? 'https://play.google.com/store/apps/details?id=com.qeedagame.app' :
+                //     'itms-apps://itunes.apple.com/app/my-app/idxxxxxxxx?mt=8';
+            }
+            document.getElementById('loader').setAttribute("src", "intent://#Intent;scheme=newbrandbuy;package=com.qeedagame.app;S.browser_fallback_url="+fallbackLink+"end");
+            window.setTimeout(function () { window.location.replace(fallbackLink); }, 10000);
+        })();</script> -->
+
+        <a id="redirectLink" href="qeedaapp://qeeda.com/qeeda" style="font-size: 20px">Redirecting...</a>
+        <script type="text/javascript">
+            var urlParams = new URLSearchParams(window.location.search);
+            var qStr=urlParams.toString();
+            var fallbackLink = 'https://qeedagame.com/install-app/';
+             // document.getElementById('redirectLink').click();
+            if(urlParams.has("target")&&urlParams.get("target")=="order"){
+                window.location.href="qeedaapp://qeeda.com/order?"+qStr;
+            }else if(urlParams.has("post")){
+                window.location.href="qeedaapp://qeeda.com/contest?"+qStr;
+            }else if(urlParams.has("tId")){
+                window.location.href="qeedaapp://qeeda.com/tournament?"+qStr;
+            }else{
+                window.location.href="qeedaapp://qeeda.com/contestcat?"+qStr;
+            }
+             
+             window.setTimeout(function () { window.location.href=fallbackLink; }, 5000);
+        </script>
+</body>
+
+</html>
