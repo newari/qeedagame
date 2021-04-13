@@ -1,286 +1,430 @@
-
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Install Qeeda App : Shop, Play & Win Cashback</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="On Qeeda app, anyone can join Ludo Challenges and Tournaments like Free Fire, Lucky Dice etc, Play board games and win real cash rewards. In every tournament or game, no one lose here.">
-		<meta name="keywords" content="Qeeda, Install Qeeda, GAME, EARN Money, Real Money, Ludo Challenge, Free Fire Tournaments, Lucky Dice, Qeeda Coins, Play & Earn, Double Money, Qeeda App, Qeeda android app">
-		<link rel="icon" href="https://s.qeeda.in/f/favicon.png" type="image/gif" sizes="16x16">
-		<meta property="og:title" content="Install Qeeda App : Play, Join Tournaments & Shop to Win Cash Rewards">
-		<meta property="og:site_name" content="Install Qeeda App : Play, Join Tournaments & Shop to Win Cash Rewards">
-		<meta property="og:url" content="https://qeedagame.com/">
-		<meta property="og:image" content="https://qeedagame.com/image/qeeda-game-share-fb.png">
-		<meta property="og:description" content="On Qeeda app, anyone can join Ludo Challenges and Tournaments like Free Fire, Lucky Dice etc, Play board games and win real cash rewards. In every tournament or game, no one lose here.">
-		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-		<style type="text/css">
-			*{
-				font-family: 'Roboto', sans-serif;
-			}
-			body{
-				margin:0px;
-				background: #f1f1f1;
-			}
-			.wrapper{
-				max-width: 600px;
-				margin:auto;
-				background: white;
-			}
-			.section.header{
-				height: 50px;
-			    text-align: center;
-			    background: white;
-			    border-bottom: 1px solid #aaa;
-			}
-			.header img{
-			    max-height: 36px;
-    			margin-top: 6px;
-			}
-			.colbox{
-				display: flex;
-    			justify-content: space-between;
-			}
-			.col{
 
-			}
-			.col3{
-				max-width: 30%;
-    			padding: 15px;
-			}
-			.col7{
+<head>
+	<title>Install Qeeda App : Shop, Play & Win Cashback</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description"
+		content="On Qeeda app, anyone can join Ludo Challenges and Tournaments like Free Fire, Lucky Dice etc, Play board games and win real cash rewards. In every tournament or game, no one lose here.">
+	<meta name="keywords"
+		content="Qeeda, Install Qeeda, GAME, EARN Money, Real Money, Ludo Challenge, Free Fire Tournaments, Lucky Dice, Qeeda Coins, Play & Earn, Double Money, Qeeda App, Qeeda android app">
+	<link rel="icon" href="https://s.qeeda.in/f/favicon.png" type="image/gif" sizes="16x16">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap"
+		rel="stylesheet">
+	<meta property="og:title" content="Install Qeeda App : Play, Join Tournaments & Shop to Win Cash Rewards">
+	<meta property="og:site_name" content="Install Qeeda App : Play, Join Tournaments & Shop to Win Cash Rewards">
+	<meta property="og:url" content="https://qeedagame.com/">
+	<meta property="og:image" content="https://qeedagame.com/image/qeeda-game-share-fb.png">
+	<meta property="og:description"
+		content="On Qeeda app, anyone can join Ludo Challenges and Tournaments like Free Fire, Lucky Dice etc, Play board games and win real cash rewards. In every tournament or game, no one lose here.">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		* {
+			font-family: 'Roboto', sans-serif;
+		}
 
-			}
-			.hero .col3 img{
-				max-width: 100%;
-			}
-			.hero h1{
-				font-size: 22px;
+		body {
+			margin: 0px;
+			background: #f1f1f1;
+		}
 
-			}
-			.publisher-name{
-				font-size: 15px;
-    			color: #049244;
-			}
-			.sa{
-				justify-content: space-around;
-			}
-			.summary .col{
-				text-align: center;
-			}
-			.summary .col>span{
-				font-size: 14px;
-				color:#3e3e3e;
-			}
-			.summary .col>b{
-				font-size: 15px
-			}
-			.summary .col>span img{
-				max-height: 14px;
-			}
-			.section.referral{
-			    padding: 15px;
-			    margin-top: 15px;
-			    padding-bottom: 0px;
-			    display: none;
-			}
-			.referral input{
-				text-align: center;
-			    margin-top: 8px;
-			    border: 0px;
-			    width: 80%;
-			    font-size: 12px;
-			    font-weight: bold;
-			    padding: 4px 0px;
-			    border: dashed 1px #CDDC39;
-			}
-			.referral span{
-				font-size: 11px;
-			}
-			.section.action{
-				padding: 15px;
-			    font-size: 18px;
-			    margin-top: 15px;
-			}
-			.btn-download{
-				font-size: 16px;
-			    font-weight: bold;
-			    background: #0e7143;
-			    border: solid 1px #367143;
-			    /* box-shadow: 1px 1px 1px 1px #367143; */
-			    padding: 10px;
-			    border-radius: 5px;
-			    color: white;
-			    display: block;
-		        text-align: center;
-    			text-decoration: none;
-			}
-			.section.gallery{
-				padding: 15px;
-			    overflow-x: scroll;
-    			overflow-y: hidden;
-			}
-			.gallery ul{
-				margin: 0px;
-			    padding: 0px;
-			    list-style: none;
-			    width: max-content;
-			}
-			.gallery ul li{
-				display: inline-block;
-			    margin-right: 10px;
-			}
-			.gallery ul li img{
-				max-width: 100%;
-			}
-			.section.about{
-				padding:15px;
-			}
-			.about h3{
-				font-weight: 200;
-			}
-			.about p{
-				color: #353535;
-				font-size: 15px
-			}
-			.rc{
-				text-align: center;
-				width:40%;
-			}
-			#cpd{
-				display: none;
-			    position: relative;
-			    /* background: #899418; */
-			    color: #8e8b8b;
-			    padding: 1px 3px;
-			    border-radius: 2px;
 
-			}
-		</style>
-	</head>
-	<body>
-		<div class="wrapper">
-			<div class="section header">
-				<img src="https://s.qeeda.in/f/qeeda-full-logo-50.png" alt="Qeeda App">
-			</div>
-			<div class="section hero">
-				<div class="colbox">
-					<div class="col col3">
-						<img src="https://s.qeeda.in/f/qeeda-icon-round.png" alt="Qeeda">
-					</div>
-					<div class="col col7">
-						<h1>Qeeda - Shop, Play & Win Cashback</h1>
-						<span class="publisher-name">Gorz Infotech</span>
-					</div>
-				</div>
-			</div>
-			<div class="section summary">
-				<div class="colbox sa">
-					<div class="col">
-						<span>
-							<img src="https://s.qeeda.in/f/download-arrow.png" alt="APK Size">
-						</span>
-						<br>
-						<span>14 MB</span>
-					</div>
-					<div class="col">
-						<span>
-							<img src="https://lh3.googleusercontent.com/EbEX3AN4FC4pu3lsElAHCiksluOVU8OgkgtWC43-wmm_aHVq2D65FmEM97bPexilUAvlAY5_4ARH8Tb3RxQ=s14" srcset="https://lh3.googleusercontent.com/EbEX3AN4FC4pu3lsElAHCiksluOVU8OgkgtWC43-wmm_aHVq2D65FmEM97bPexilUAvlAY5_4ARH8Tb3RxQ=s28 2x" class="T75of E1GfKc" aria-hidden="true" alt="Rated for 3+" data-atf="true" data-iml="2197.785000083968">
-						</span>
-						<br>
-						<span>Rated</span>
-					</div>
-					<div class="col">
-						<b>
-							1.5M+
-						</b>
-						<br>
-						<span>Users</span>
-					</div>
-				</div>
-			</div>
-			<div class="section referral" id="rcSection">
-				<div class="colbox">
-					<div class="col rc"><input type="text" id="rc" readonly="true" value="11qg1234h" onclick="copyCode()"><span id="cpd"> Copied! </span></div>
-					<div class="col"><span>Click to copy this code and use on signup to get extra INR 10/-</span></div>
-				</div>
-			</div>
-			<div class="section action">
-				<a href="https://s.qeeda.in/QeedaV0.9.1.apk" class="btn btn-download" id="intallBtn" onclick="onInstallBtnClick()">Install</a>
-			</div>
-			<div class="section gallery">
-				<ul>
-					<li>
-						<img src="https://s.qeeda.in/f/qeeda-app-home.jpg" alt="Qeeda Home Screen">
-					</li>
-					<li>
-						<img src="https://s.qeeda.in/f/qeeda-contest.jpg" alt="Qeeda Contest">
-					</li>
 
-					<li>
-						<img src="https://s.qeeda.in/f/qeeda-contest-post.jpg" alt="Qeeda Contest Post">
-					</li>
+		.banner-img {
+			width: 360px;
+		}
 
-					<li>
-						<img src="https://s.qeeda.in/f/qeeda-contest-preview.jpg" alt="Qeeda Contest Editor">
-					</li>
+		.section.banner {
+			text-align: center;
+		}
 
-					<li>
-						<img src="https://s.qeeda.in/f/qeeda-bpl-result.jpg" alt="Qeeda BPL Result">
-					</li>
+		.wrapper {
+			max-width: 600px;
+			margin: auto;
+			background: white;
+		}
 
-					<li>
-						<img src="https://s.qeeda.in/f/qeeda-shopping.jpg" alt="Qeeda Shopping">
-					</li>
+		.section.header {
+			height: 50px;
+			text-align: center;
+			background: white;
+			border-bottom: 1px solid #aaa;
+		}
 
-					<li>
-						<img src="https://s.qeeda.in/f/qeeda-lucky-dice.jpg" alt="Qeeda Lucky Dice Game">
-					</li>
+		.header img {
+			max-height: 36px;
+			margin-top: 6px;
+		}
 
-					<li>
-						<img src="https://s.qeeda.in/f/qeeda-dot-and-box.jpg" alt="Qeeda Dots & Boxes Game">
-					</li>
+		.colbox {
+			display: flex;
+			justify-content: space-around;
+		}
 
-				</ul>
-			</div>
-			<div class="section about">
-				<h3>About this app</h3>
-				<p>
-					Jeetne par Cash, Haarne par Aish!
-				</p>
-				<p>
-					Download the qeeda game app now and get a chance to win 1.65*money every time you play the game. To play qeeda game is very easy. Just choose the game of your interest and select the game table. Join hundreds of tournaments and ludo challenges daily and real cash 
-				</p>
-			</div>
-			<div class="section footer"></div>
+		.col {}
+
+		.col3 {
+			max-width: 20%;
+			padding-left: 3px;
+			padding-right: 3px;
+		}
+
+		.col7 {
+			padding-top: 8px;
+		}
+
+		.hero .col3 img {
+			max-width: 100%;
+		}
+
+		.hero h1 {
+			font-size: 22px;
+			margin-top: 0px;
+
+		}
+
+		.publisher-name {
+			font-size: 15px;
+			color: #049244;
+		}
+
+		.sa {
+			justify-content: space-around;
+		}
+
+		.summary .col {
+			text-align: center;
+		}
+
+		.summary {
+			margin-top: 15px;
+		}
+
+		.summary .col>span {
+			font-size: 14px;
+			color: #3e3e3e;
+		}
+
+		.summary .col>b {
+			font-size: 15px
+		}
+
+		.summary .col>span img {
+			max-height: 28px;
+			border: solid 1px #eac49c;
+			border-radius: 50%;
+			padding: 8px;
+		}
+
+		.section.referral {
+			padding: 15px;
+			margin-top: 15px;
+			padding-bottom: 10px;
+		}
+
+		.referral input {
+			text-align: center;
+			margin-top: 8px;
+			border: 0px;
+			width: 80%;
+			font-size: 12px;
+			font-weight: bold;
+			padding: 4px 0px;
+			border: dashed 1px #CDDC39;
+		}
+
+		.referral span {
+			font-size: 11px;
+		}
+
+		.section.action {
+			padding: 15px;
+			font-size: 18px;
+			margin-top: 2px;
+		}
+
+		.btn-download {
+			font-size: 16px;
+			font-weight: bold;
+			background: #0e7143;
+			border: solid 1px #367143;
+			/* box-shadow: 1px 1px 1px 1px #367143; */
+			padding: 10px;
+			border-radius: 5px;
+			color: white;
+			display: block;
+			text-align: center;
+			text-decoration: none;
+		}
+
+		.section.gallery {
+			padding: 15px;
+			overflow-x: scroll;
+			overflow-y: hidden;
+		}
+
+		.gallery ul {
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+			width: max-content;
+		}
+
+		.gallery ul li {
+			display: inline-block;
+			margin-right: 10px;
+		}
+
+		.gallery ul li img {
+			width: 261px;
+		}
+
+		.section.about {
+			padding: 15px;
+		}
+
+		.about h2 {
+			font-family: 'montserrat';
+			color: rgb(241 134 59);
+			font-weight: bold;
+			line-height: 1.5;
+			margin-top: 4px;
+			margin-bottom: 4px;
+		}
+
+		.about p {
+			color: #353535;
+			font-size: 15px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			padding-left: 22px;
+		}
+
+		.rc {
+			text-align: center;
+			width: 40%;
+		}
+
+		#cpd {
+			display: none;
+			position: relative;
+			/* background: #899418; */
+			color: #8e8b8b;
+			padding: 1px 3px;
+			border-radius: 2px;
+
+
+		}
+
+		.section.footer {
+			padding: 15px;
+		}
+
+		.payment-partner {
+			display: flex;
+			flex-direction: row;
+
+		}
+
+		.payment-img {
+			width: 64px;
+			height: 64px;
+		}
+
+		.img-margin {
+			margin-left: 20px;
+		}
+
+		.action-footer {
+			padding: 15px;
+			font-size: 18px;
+			margin-top: 0px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- <div class="section header">
+			<img src="https://s.qeeda.in/f/qeeda-full-logo-50.png" alt="Qeeda App">
+		</div> -->
+		<div class="section banner">
+			<img class="banner-img" src="assets/bnr.png" alt="banner">
 		</div>
-		<script type="text/javascript">
-			var urlParams = new URLSearchParams(window.location.search);
-            var qStr=urlParams.toString();
-             // document.getElementById('redirectLink').click();
-            if(urlParams.has("rc")&&urlParams.get("rc").trim()!=""){
-            	document.getElementById("rcSection").style.display="block";
-                document.getElementById("rc").value=urlParams.get("rc").trim();
-            }
-            function copyCode() {
-			  /* Get the text field */
-			  var copyText = document.getElementById("rc");
+		<div class="section hero">
+			<div class="colbox">
+				<div class="col col3">
+					<img src="https://s.qeeda.in/f/qeeda-icon-round.png" alt="Qeeda">
+				</div>
+				<div class="col col7">
+					<h1>Qeeda - Play, Earn & Shop</h1>
+					<span class="publisher-name">Gorz Infotech</span>
+				</div>
+			</div>
+		</div>
+		<div class="section summary">
+			<div class="colbox sa">
+				<div class="col">
+					<span>
+						<img src="./assets/rate.png" alt="APK Size">
+					</span>
+					<br>
+					<span>4.5 Star Rating</span>
+				</div>
+				<div class="col">
+					<span>
+						<img src="./assets/online-shopping.png" alt="APK Size">
+					</span>
+					<br>
+					<span>Free Shopping</span>
+				</div>
+				<div class="col">
+					<span>
+						<img src="./assets/withdraw.png" alt="APK Size">
+					</span>
+					<br>
+					<span>Easy Withdrawal</span>
+				</div>
+			</div>
+		</div>
+		<div class="section referral" id="rcSection">
+			<div class="colbox">
+				<div class="col rc"><input type="text" id="rc" readonly="true" value="35y1455ri"
+						onclick="copyCode()"><span id="cpd"> Copied! </span></div>
+				<div class="col"><span>Click to copy this code and use on signup to get extra INR 10/-</span></div>
+			</div>
+		</div>
+		<div class="section action">
+			<a href="https://s.qeeda.in/QeedaV0.9.1.apk" class="btn btn-download" id="intallBtn"
+				onclick="onInstallBtnClick()">Install</a>
+		</div>
+		<div class="section gallery">
+			<ul>
+				<li>
+					<img src="./assets/mobile/slider55.png" alt="Qeeda Home Screen">
+				</li>
+				<li>
+					<img src="./assets/mobile/slider2.png" alt="Qeeda Contest">
+				</li>
 
-			  /* Select the text field */
-			  copyText.select();
-			  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+				<li>
+					<img src="./assets/mobile/slider3.png" alt="Qeeda Contest Post">
+				</li>
 
-			  /* Copy the text inside the text field */
-			  document.execCommand("copy");
+				<li>
+					<img src="./assets/mobile/slider4.png" alt="Qeeda Contest Editor">
+				</li>
+				<li>
+					<img src="./assets/mobile/slider6.png" alt="Qeeda Shopping">
+				</li>
+				<li>
+					<img src="./assets/mobile/slider11.png" alt="Qeeda BPL Result">
+				</li>
 
-			  /* Alert the copied text */
-			  document.getElementById("cpd").style.display="inline-block"
-			  // alert("Copied the text: " + copyText.value);
 
+			</ul>
+		</div>
+		<div class="section about">
+			<!-- <h3>About Qeedagame</h3> -->
+			<!-- <p>
+				Jeetne par Cash, Haarne par Aish!
+			</p> -->
+			<div>
+				<h2><i class="fa fa-check-circle-o" style="margin-right: 4px;"></i>Fantasy & Chances</h2>
+				<p>Join Cricket Fantasy, Chances and Play games to win cash prizes.</p>
+			</div>
+			<div>
+				<h2><i class="fa fa-check-circle-o" style="margin-right: 4px;"></i>Win on Lost</h2>
+				<p>Win coins on lost and shop for free with coins.</p>
+			</div>
+			<div>
+				<h2><i class="fa fa-check-circle-o" style="margin-right: 4px;"></i>Cricket Prediction</h2>
+				<p>Predict And Win Unlimited Cash in Every IPL Match.</p>
+			</div>
+			<div>
+				<h2><i class="fa fa-check-circle-o" style="margin-right: 4px;"></i>Play Ludo and Earn</h2>
+				<p>Create or Accept Ludo king challenges and win cash prizes!.</p>
+			</div>
+			<!-- <span>
+				&#9702; Join Cricket Fantasy, Chances and Play games to win cash prizes.</br>
+				&#9702; Win coins on lost and shop for free with coins.</br>
+				&#9702; Join multiple tournaments and win amazing cash prizes instantly!.</br>
+			 &#9679; Get a chance to win 1.65*money every time you play the game.</br>
+			&#9702; Predict And Win Unlimited Cash in Every IPL Match.</br>
+			&#9702; Create or Accept Ludo king challenges and win cash prizes!.</br>
+			&#9702; Use Upto 100% Coins Buy your favourite products with 100% Qeeda coins.</br> 
+			</span> -->
+
+		</div>
+		<div class="section footer">
+			<div>
+				<h3>Withdraw Winnings With</h3>
+			</div>
+			<div class="payment-partner">
+				<marquee behavior="scroll" direction="left">
+					<span class="col">
+						<img class="payment-img" src="assets/paytm.png">
+					</span>
+					<span class="col">
+						<img class="payment-img img-margin" src="assets/upi.png">
+					</span class="col">
+					<span>
+						<img class="payment-img img-margin" src="assets/bank_transfer.png">
+					</span>
+				</marquee>
+
+			</div>
+		</div>
+		<div class="section action-footer">
+			<a href="https://s.qeeda.in/QeedaV0.9.1.apk" class="btn btn-download" id="intallBtn"
+				onclick="onInstallBtnClick()">Install</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var urlParams = new URLSearchParams(window.location.search);
+		var qStr = urlParams.toString();
+		// document.getElementById('redirectLink').click();
+		if (urlParams.has("rc") && urlParams.get("rc").trim() != "") {
+			document.getElementById("rcSection").style.display = "block";
+			document.getElementById("rc").value = urlParams.get("rc").trim();
+		}
+		console.log('called');
+		let a, b;
+		//callApi("http://localhost:1337/api/qeeda/ads/campaign");
+		callApi("https://api3.qeedagame.com/api/qeeda/ads/campaign");
+		async function callApi(url) {
+			const response = await fetch(url);
+			if (response) {
+				var data = await response.json();
+				console.log('data', data);
 			}
-			function onInstallBtnClick(){
-				document.getElementById("intallBtn").innerText="Downloading..."
-			}
-		</script>
-	</body>
+
+		}
+		function copyCode() {
+			/* Get the text field */
+			var copyText = document.getElementById("rc");
+
+			/* Select the text field */
+			copyText.select();
+			copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+			/* Copy the text inside the text field */
+			document.execCommand("copy");
+
+			/* Alert the copied text */
+			document.getElementById("cpd").style.display = "inline-block"
+			// alert("Copied the text: " + copyText.value);
+
+		}
+		function onInstallBtnClick() {
+			callApi("https://api3.qeedagame.com/api/qeeda/ads/campaign?type=button");
+			//callApi("http://localhost:1337/api/qeeda/ads/campaign?type=button");
+			document.getElementById("intallBtn").innerText = "Downloading..."
+		}
+	</script>
+</body>
+
 </html>
