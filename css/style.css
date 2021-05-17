@@ -1639,7 +1639,8 @@ div[class*="-alt"]:after {
 
 [class*=style-].footer-wrapper,
 div[class*=style-].footer-wrapper {
-    padding-top: 270px!important
+    padding-top: 270px!important;
+    padding-bottom: 170px!important
 }
 
 .footer-wrapper .copyright {
